@@ -1,0 +1,33 @@
+     {
+       "owner_name": "SYS",
+       ".travis.yml": {
+         "language": "bash",
+         "script": "echo 'skript jede XXXX pres stash-api'; sleep 3; echo 'Ahoj!'",
+         "git": {
+           "no_clone": true
+         }
+       },
+
+
+       "provider": "stash",
+
+
+       "repository":{
+         "slug":"build-scripts",
+         "name":"build-scripts",
+         "project":{
+            "key":"SYS",
+            "name":"SYS",
+            "description":"SYS product",
+            "public":true,
+            "type":"NORMAL"
+         },
+         "public":true
+       },
+       "refChange": {
+         "refId":"refs/heads/master",
+         "fromHash":"14f06778b9ad8b3fee29a3496edc44f9c4fbb6d2",
+         "toHash":"1520bdfe55c13092eb91999b24242713cee99fdd",
+         "type":"UPDATE"
+       }
+     }
